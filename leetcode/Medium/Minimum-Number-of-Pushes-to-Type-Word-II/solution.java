@@ -1,0 +1,35 @@
+/*
+ * LeetCode: Minimum Number of Pushes to Type Word II
+ * Difficulty: Medium
+ * Language: Java
+ * Problem: https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/
+ */
+
+import java.util.Arrays;
+
+class Solution {
+    public int minimumPushes(String word) {
+        int[] freq = new int[26];
+        for (char c : word.toCharArray()) 
+        {
+            freq[c - 'a']++;
+        }
+
+        Arrays.sort(freq);
+
+        int totalPushes = 0;
+        int distinctCount = 0;
+
+        for (int i = 25; i >= 0; i--) 
+        {
+            if (freq[i] == 0) break;
+
+            int pushMultiplier = (distinctCount / 8) + 1;
+            totalPushes += freq[i] * pushMultiplier;
+
+            distinctCount++;
+        }
+
+        return totalPushes;
+    }
+}
