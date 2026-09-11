@@ -1,0 +1,30 @@
+"""
+LeetCode: Widest Possible Fence
+Difficulty: Hard
+Language: Python
+Problem: https://leetcode.com/problems/widest-possible-fence/
+"""
+
+from collections import Counter
+
+class Solution:
+    def maximumWidth(self, planks: list[int]) -> int:
+        f=Counter(planks)
+        v=sorted(f.keys())
+        p=Counter()
+        for i,a in enumerate(v):
+            for j in range(i,len(v)):
+                b=v[j]
+                if a==b:
+                    c=f[a]//2
+                else:
+                    c=min(f[a],f[b])
+                p[a+b]+=c
+        r=0
+        t=set(f)|set(p)
+        for i in t:
+            t=f.get(i,0)+p.get(i,0)
+            r=max(r,t)
+
+
+        return r
