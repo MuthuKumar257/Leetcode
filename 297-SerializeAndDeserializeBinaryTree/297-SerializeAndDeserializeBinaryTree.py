@@ -1,0 +1,16 @@
+# Last updated: 9/11/2026, 9:44:37 AM
+class Codec:
+    def serialize(self, root):
+        if not root: return "#"
+        return str(root.val) + "," + self.serialize(root.left) + "," + self.serialize(root.right)
+    
+    def deserialize(self, data):
+        vals = iter(data.split(","))
+        def build():
+            v = next(vals)
+            if v == "#": return None
+            node = TreeNode(int(v))
+            node.left = build()
+            node.right = build()
+            return node
+        return build()
