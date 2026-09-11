@@ -1,0 +1,15 @@
+/*
+ * LeetCode: Divide Two Integers
+ * Difficulty: Medium
+ * Language: Java
+ * Problem: https://leetcode.com/problems/divide-two-integers/
+ */
+
+class Solution {
+    public int divide(int dividend, int divisor) {
+       if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE;
+        }
+       return dividend/divisor; 
+    }
+}
