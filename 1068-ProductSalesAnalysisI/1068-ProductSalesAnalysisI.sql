@@ -1,0 +1,7 @@
+-- Last updated: 9/11/2026, 9:39:14 AM
+# Write your MySQL query statement below
+# Write your MySQL query statement below
+select p.product_name , s.year , s.price
+from Sales as s
+Left Join Product as p
+ON s.product_id = p.product_id
