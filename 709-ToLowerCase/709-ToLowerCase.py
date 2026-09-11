@@ -1,0 +1,4 @@
+# Last updated: 9/11/2026, 9:42:03 AM
+class Solution:
+    def toLowerCase(self, s: str) -> str:
+       return s.lower() 
