@@ -1,17 +1,17 @@
 # 1021. Remove Outermost Parentheses
 
 - **Difficulty:** Easy
-- **Language:** Python
+- **Language:** Java
 - **LeetCode Link:** [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
 
 ## Solution
 
-See [`solution.py`](./solution.py).
+See [`solution.java`](./solution.java).
 
 ## Performance
 
-- **Runtime:** 0 ms (beats 100.0%)
-- **Memory:** 17.9 MB (beats 100.0%)
+- **Runtime:** 2 ms (beats 99.5%)
+- **Memory:** 43.6 MB (beats 50.3%)
 
 ## Complexity
 
