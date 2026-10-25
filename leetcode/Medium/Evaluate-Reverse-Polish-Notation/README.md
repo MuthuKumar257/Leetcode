@@ -6,12 +6,12 @@
 
 ## Solution
 
-See [`solution.py`](./solution.py).
+See [`solution_v2.py`](./solution_v2.py).
 
 ## Performance
 
-- **Runtime:** 3 ms (beats 54.7%)
-- **Memory:** 20.6 MB (beats 35.8%)
+- **Runtime:** 3 ms (beats 51.3%)
+- **Memory:** 20.6 MB (beats 35.1%)
 
 ## Complexity
 
