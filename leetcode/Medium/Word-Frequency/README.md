@@ -6,12 +6,12 @@
 
 ## Solution
 
-See [`solution.sh`](./solution.sh).
+See [`solution_v2.sh`](./solution_v2.sh).
 
 ## Performance
 
-- **Runtime:** 83 ms (beats 26.5%)
-- **Memory:** 3.8 MB (beats 95.4%)
+- **Runtime:** 83 ms (beats 26.2%)
+- **Memory:** 3.8 MB (beats 87.8%)
 
 ## Complexity
 
