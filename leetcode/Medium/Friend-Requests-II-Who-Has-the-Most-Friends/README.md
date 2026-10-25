@@ -6,11 +6,11 @@
 
 ## Solution
 
-See [`solution.sql`](./solution.sql).
+See [`solution_v2.sql`](./solution_v2.sql).
 
 ## Performance
 
-- **Runtime:** 336 ms (beats 60.2%)
+- **Runtime:** 336 ms (beats 52.9%)
 - **Memory:** 0B (beats 100.0%)
 
 ## Complexity
