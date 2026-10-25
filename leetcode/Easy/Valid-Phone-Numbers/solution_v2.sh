@@ -1,0 +1,14 @@
+# LeetCode: Valid Phone Numbers
+# Difficulty: Easy
+# Language: Bash
+# Problem: https://leetcode.com/problems/valid-phone-numbers/
+
+# Read from the file file.txt and output all valid phone numbers to stdout.
+p1='\([0-9][0-9][0-9]\)\ [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]'
+p2='[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]'
+
+while read line; do
+  case "$line" in
+  $p1 | $p2) echo "$line" ;;
+  esac
+done <file.txt
