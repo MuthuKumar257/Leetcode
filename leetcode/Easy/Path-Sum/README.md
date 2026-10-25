@@ -6,12 +6,12 @@
 
 ## Solution
 
-See [`solution.java`](./solution.java).
+See [`solution_v2.java`](./solution_v2.java).
 
 ## Performance
 
 - **Runtime:** 0 ms (beats 100.0%)
-- **Memory:** 44.6 MB (beats 95.8%)
+- **Memory:** 44.6 MB (beats 88.6%)
 
 ## Complexity
 
